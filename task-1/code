@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<math.h>
+
+void main()
+{
+    int x,n,num;
+    printf("Elephant is in point 0 on coordinate line\n");
+    printf("enter the elephant friend location point on coordinate line between 1 and 1000000 to find minimum number of steps \n");
+    scanf("%d", &x);
+    num=x%5;
+    if(num==0)
+    {
+        n=x/5;
+        printf("elephant can reach its friend in %d steps in the shortest", n);
+    }
+    else
+    {
+        n=(x/5)+1;
+        printf("elephant can reach its friend in %d steps in the shortest", n);
+    }
+}
